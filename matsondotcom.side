@@ -1,0 +1,148 @@
+{
+  "id": "47b19ac1-81d6-4be7-8451-f9a774cb0ed8",
+  "version": "2.0",
+  "name": "matsondotcom",
+  "url": "https://www.matson.com",
+  "tests": [{
+    "id": "8b832713-6ea7-4be5-8aca-f93b00e5c9d4",
+    "name": "matsondotcom",
+    "commands": [{
+      "id": "8e696e8e-abd0-4533-8a76-812bea97bbe9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f0f2ee9-175c-498a-89fb-9ec0c882a652",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28b854d3-9a97-4aca-911f-4982c158bf14",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "MATSON – Ocean Shipping, Truck, Rail & Logistics",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8693270b-f213-4585-8790-948eba8ac44e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Shipping Schedules ›",
+      "targets": [
+        ["linkText=Shipping Schedules ›", "linkText"],
+        ["css=.current-sr-slide-visible > .btn-shipping > .tp-btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Shipping Schedules ›')])[2]", "xpath:link"],
+        ["xpath=//div[@id='rev_slider_1_1']/ul/li[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/matnav/schedules/interactive_vessel_schedule.html')])[2]", "xpath:href"],
+        ["xpath=//li[2]/div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc64699f-380b-4740-abd9-29c3111d059c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Shipping Schedules ›",
+      "targets": [
+        ["linkText=Shipping Schedules ›", "linkText"],
+        ["css=.current-sr-slide-visible > .btn-shipping > .tp-btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Shipping Schedules ›')])[2]", "xpath:link"],
+        ["xpath=//div[@id='rev_slider_1_1']/ul/li[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/matnav/schedules/interactive_vessel_schedule.html')])[2]", "xpath:href"],
+        ["xpath=//li[2]/div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37a12992-728d-4540-8c25-f1afb29a46fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-item-761 span",
+      "targets": [
+        ["css=#menu-item-761 span", "css:finder"],
+        ["xpath=//li[@id='menu-item-761']/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3b45a3c-c787-4033-8127-a01606eadcaa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.pg-tagline",
+      "targets": [
+        ["css=.pg-tagline", "css:finder"],
+        ["xpath=//header[@id='masthead']/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ocean Shipping, Truck, Rail & Logistics')]", "xpath:innerText"]
+      ],
+      "value": "Ocean Shipping, Truck, Rail & Logistics"
+    }, {
+      "id": "eecf58cb-4602-4d5f-aad5-5802b8f329ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-item-762 span",
+      "targets": [
+        ["css=#menu-item-762 span", "css:finder"],
+        ["xpath=//li[@id='menu-item-762']/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "958595d2-cf29-4dc4-ba8a-69348a755846",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Logistics – MATSON",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ddfc073-1f97-438d-936e-688993487ce2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-item-2618 > a",
+      "targets": [
+        ["css=#menu-item-2618 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Track')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-2618']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ml.matson.com/ML_CV_Portal/Ushipmenttracking')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5224",
+      "windowTimeout": 2000
+    }, {
+      "id": "4ff0e227-fef6-4b10-839e-6051de2d57b8",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "409ad752-09ad-48d5-a3d2-37e089b81599",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5224}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aedd45a-6289-471e-92b6-4adfc06ee2f5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bda0c9f0-e82c-40d4-8ca5-14d484c7e59f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8b832713-6ea7-4be5-8aca-f93b00e5c9d4"]
+  }],
+  "urls": ["https://www.matson.com/"],
+  "plugins": []
+}
